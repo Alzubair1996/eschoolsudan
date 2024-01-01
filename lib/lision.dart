@@ -107,18 +107,18 @@ class _Lison extends State<LisonOne> {
         audio4: 'assets/audio/دراجة.mp3'),
     lision1(
         id: 7,
-        an1: "تاكسي",
-        an2: "كارو",
-        an3: "حفلة المدرسة",
-        an4: "دراجه هوائيه",
+        an1: "سيارة اجرة",
+        an2: "فرن",
+        an3: "حافلة المدرسة",
+        an4: "وصلة كهرباء",
         image1: 'assets/images/تاكسي.png',
-        image2: 'assets/images/كارو.png',
+        image2: 'assets/images/فرن.png',
         image3: 'assets/images/حفلة.png',
-        image4: 'assets/images/دراجه.png',
+        image4: 'assets/images/وصلة.png',
         audio1: 'assets/audio/تاكسي.mp3',
-        audio2: 'assets/audio/كارو.mp3',
+        audio2: 'assets/audio/فرن.mp3',
         audio3: 'assets/audio/حفلة.mp3',
-        audio4: 'assets/audio/دراجة.mp3'),
+        audio4: 'assets/audio/وصلة.mp3'),
   ];
 
   @override
