@@ -166,19 +166,18 @@ class _ListScreenState extends State<ListScreen> {
                     flex: 1,
                     child: ClipRRect(
                       borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(20.0), // الزاوية اليسرى العليا
-                        bottomLeft:
-                            Radius.circular(20.0), // الزاوية اليسرى السفلية
+                        topLeft: Radius.circular(20.0),
+                        bottomLeft: Radius.circular(20.0),
                       ),
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.tealAccent,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.5), // لون الظل
+                              color: Colors.grey.withOpacity(0.5),
                               spreadRadius: 2,
                               blurRadius: 5,
-                              offset: const Offset(0, 3), // تحديد موقع الظل
+                              offset: const Offset(0, 3),
                             ),
                           ],
                         ),
@@ -279,143 +278,6 @@ class _ListScreenState extends State<ListScreen> {
 
                             widget.a1 = aa;
                           });
-
-                          //      widget.a1.addAll(Educationa.stages[index].grades);
-                          print(widget.education1);
-                          print(widget.grades1);
-                          print(widget.subjects1);
-                          print(widget.units1);
-                          print(widget.lessons1);
-                          /*
-                          setState(() {
-                            widget.a1.clear();
-                            widget.a1.addAll(widget.grades1 == -1
-                                ? Educationa.stages[index].grades
-                                : widget.subjects1 == -1
-                                    ? Educationa.stages[widget.grades1]
-                                        .grades[index].subjects
-                                    : widget.units1 == -1
-                                        ? Educationa
-                                            .stages[widget.grades1]
-                                            .grades[widget.subjects1]
-                                            .subjects[index]
-                                            .units
-                                        : Educationa
-                                            .stages[widget.grades1]
-                                            .grades[widget.subjects1]
-                                            .subjects[widget.units1]
-                                            .units[index]
-                                            .lessons);
-
-                            widget.item = widget.units1 == -1
-                                ? ""
-                                : Educationa
-                                    .stages[widget.grades1]
-                                    .grades[widget.subjects1]
-                                    .subjects[widget.units1]
-                                    .units[index]
-                                    .name;
-                            widget.name = "المراحل الدراسية";
-                            widget.education1 = widget.education1;
-                            widget.grades1 =
-                                widget.grades1 == -1 ? index : widget.grades1;
-                            widget.subjects1 = widget.grades1 != -1
-                                ? widget.subjects1 == -1
-                                    ? index
-                                    : widget.subjects1
-                                : -1;
-                            widget.units1 = widget.subjects1 != -1
-                                ? widget.units1 == -1
-                                    ? index
-                                    : widget.units1
-                                : -1;
-                            widget.lessons1 = widget.units1 != -1
-                                ? widget.lessons1 == -1
-                                    ? index
-                                    : widget.lessons1
-                                : -1;
-                          });
-*/
-                          /*
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => ListScreen(
-                                a1:widget. grades1 == -1
-                                    ? Educationa.stages[index].grades
-                                    : subjects1 == -1
-                                        ? Educationa.stages[grades1]
-                                            .grades[index].subjects
-                                        : units1 == -1
-                                            ? Educationa
-                                                .stages[grades1]
-                                                .grades[subjects1]
-                                                .subjects[index]
-                                                .units
-                                            : Educationa
-                                                .stages[grades1]
-                                                .grades[subjects1]
-                                                .subjects[units1]
-                                                .units[index]
-                                                .lessons,
-                                item: units1 == -1
-                                    ? ""
-                                    : Educationa
-                                        .stages[grades1]
-                                        .grades[subjects1]
-                                        .subjects[units1]
-                                        .units[index]
-                                        .name,
-                                name: "المراحل الدراسية",
-                                education1: education1,
-                                grades1: grades1 == -1 ? index : grades1,
-                                subjects1: grades1 != -1
-                                    ? subjects1 == -1
-                                        ? index
-                                        : subjects1
-                                    : -1,
-                                units1: subjects1 != -1
-                                    ? units1 == -1
-                                        ? index
-                                        : units1
-                                    : -1,
-                                lessons1: units1 != -1
-                                    ? lessons1 == -1
-                                        ? index
-                                        : lessons1
-                                    : -1,
-                              ),
-                            ),
-                          );
-
-                           */
-
-                          /*
-                          grades1 == -1
-                                    ? Educationa.stages[index].name.toString()
-                                    : subjects1 == -1
-                                        ? "${Educationa.stages[grades1].name} >> ${Educationa.stages[grades1].grades[index].name}"
-                                        : units1 == -1
-                                            ? "${Educationa.stages[grades1].name} >> ${Educationa.stages[grades1].grades[index].name} >> ${Educationa.stages[grades1].grades[subjects1].subjects[index].name} "
-                                            : "${Educationa.stages[grades1].name} >> ${Educationa.stages[grades1].grades[index].name} >> ${Educationa.stages[grades1].grades[subjects1].subjects[index].name} ",
-                                education1: education1,
-                                grades1: grades1 == -1 ? index : grades1,
-                                subjects1: grades1 != -1
-                                    ? subjects1 == -1
-                                        ? index
-                                        : subjects1
-                                    : -1,
-                                units1: subjects1 != -1
-                                    ? units1 == -1
-                                        ? index
-                                        : units1
-                                    : -1,
-                                lessons1: units1 != -1
-                                    ? lessons1 == -1
-                                        ? index
-                                        : lessons1
-                                    : -1,
-                           */
                         } else {
                           Navigator.push(
                               context,
@@ -440,16 +302,14 @@ class _ListScreenState extends State<ListScreen> {
                                 Icons.lock,
                                 size: 40,
                               ),
-
                               Text(
                                 '${widget.a1[index].name}',
-                                maxLines: 2,
+                                maxLines: 3,
                                 style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w900,
                                 ),
                               ),
-                              // إضافة مسافة لترك فراغ بين العناصر
                             ],
                           ),
                         ),
