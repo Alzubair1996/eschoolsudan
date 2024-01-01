@@ -13,7 +13,7 @@ class LisonOne extends StatefulWidget {
 
 class _Lison extends State<LisonOne> {
   AudioPlayer aa1 = AudioPlayer();
-
+  String texta = "تعرف على اسماء الاشياء من حولك";
   int index = 0;
   bool a1 = false;
   bool a2 = false;
@@ -119,6 +119,90 @@ class _Lison extends State<LisonOne> {
         audio2: 'assets/audio/فرن.mp3',
         audio3: 'assets/audio/حفلة.mp3',
         audio4: 'assets/audio/وصلة.mp3'),
+    lision1(
+        id: 8,
+        an1: "ملعقة",
+        an2: "صحن",
+        an3: "موقد الغاز",
+        an4: "كاس",
+        image1: 'assets/images/ملعقة.png',
+        image2: 'assets/images/صحن.png',
+        image3: 'assets/images/موقد.png',
+        image4: 'assets/images/كاس.png',
+        audio1: 'assets/audio/ملعقة.mp3',
+        audio2: 'assets/audio/صحن.mp3',
+        audio3: 'assets/audio/موقد.mp3',
+        audio4: 'assets/audio/كاس.mp3'),
+    lision1(
+        id: 8,
+        an1: "كانون",
+        an2: "مكنسه",
+        an3: "سلة القمامه",
+        an4: "شباك",
+        image1: 'assets/images/كانون.png',
+        image2: 'assets/images/مكنسه.png',
+        image3: 'assets/images/سلة.png',
+        image4: 'assets/images/شباك.png',
+        audio1: 'assets/audio/كانون.mp3',
+        audio2: 'assets/audio/مكنسه.mp3',
+        audio3: 'assets/audio/سلة.mp3',
+        audio4: 'assets/audio/شباك.mp3'),
+    lision1(
+        id: 9,
+        an1: "راديو",
+        an2: "تلفاز",
+        an3: "حاسوب",
+        an4: "موبايل",
+        image1: 'assets/images/راديو.png',
+        image2: 'assets/images/تلفاز.png',
+        image3: 'assets/images/حاسوب.png',
+        image4: 'assets/images/موبايل.png',
+        audio1: 'assets/audio/راديو.mp3',
+        audio2: 'assets/audio/تلفاز.mp3',
+        audio3: 'assets/audio/حاسوب.mp3',
+        audio4: 'assets/audio/موبايل.mp3'),
+    lision1(
+        id: 10,
+        an1: "طبشور",
+        an2: "درج",
+        an3: "حقيبه",
+        an4: "سبورة",
+        image1: 'assets/images/طبشور.png',
+        image2: 'assets/images/درج.png',
+        image3: 'assets/images/حقيبه.png',
+        image4: 'assets/images/سبورة.png',
+        audio1: 'assets/audio/طبشور.mp3',
+        audio2: 'assets/audio/درج.mp3',
+        audio3: 'assets/audio/حقيبه.mp3',
+        audio4: 'assets/audio/سبورة.mp3'),
+    lision1(
+        id: 11,
+        an1: "منقه",
+        an2: "بيطخ",
+        an3: "موز",
+        an4: "تفاح",
+        image1: 'assets/images/منقه.png',
+        image2: 'assets/images/بيطخ.png',
+        image3: 'assets/images/موز.png',
+        image4: 'assets/images/تفاح.png',
+        audio1: 'assets/audio/منقه.mp3',
+        audio2: 'assets/audio/بيطخ.mp3',
+        audio3: 'assets/audio/موز.mp3',
+        audio4: 'assets/audio/تفاح.mp3'),
+    lision1(
+        id: 12,
+        an1: "عنب",
+        an2: "برتقال",
+        an3: "ليمون",
+        an4: "جوافة",
+        image1: 'assets/images/عنب.png',
+        image2: 'assets/images/برتقال.png',
+        image3: 'assets/images/ليمون.png',
+        image4: 'assets/images/جوافة.png',
+        audio1: 'assets/audio/عنب.mp3',
+        audio2: 'assets/audio/برتقال.mp3',
+        audio3: 'assets/audio/ليمون.mp3',
+        audio4: 'assets/audio/جوافة.mp3'),
   ];
 
   @override
@@ -180,11 +264,11 @@ class _Lison extends State<LisonOne> {
                   padding: const EdgeInsets.all(8.0),
                   child: SizedBox(
                     width: buttonWidth,
-                    child: const Align(
+                    child: Align(
                       alignment: Alignment.centerRight,
                       child: Text(
-                        "تعرف على اسماء الاشياء من حولك",
-                        style: TextStyle(
+                        texta,
+                        style: const TextStyle(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                     ),
@@ -234,7 +318,7 @@ class _Lison extends State<LisonOne> {
                                       ),
                                       child: Column(
                                         children: [
-                                          Container(
+                                          SizedBox(
                                             width: 230,
                                             height: 180,
                                             child: Image.asset(
@@ -292,7 +376,7 @@ class _Lison extends State<LisonOne> {
                                       ),
                                       child: Column(
                                         children: [
-                                          Container(
+                                          SizedBox(
                                             width: 230,
                                             height: 180,
                                             child: Image.asset(
@@ -357,7 +441,7 @@ class _Lison extends State<LisonOne> {
                                       ),
                                       child: Column(
                                         children: [
-                                          Container(
+                                          SizedBox(
                                             width: 230,
                                             height: 180,
                                             child: Image.asset(
@@ -415,7 +499,7 @@ class _Lison extends State<LisonOne> {
                                       ),
                                       child: Column(
                                         children: [
-                                          Container(
+                                          SizedBox(
                                             width: 230,
                                             height: 180,
                                             child: Image.asset(
@@ -455,6 +539,19 @@ class _Lison extends State<LisonOne> {
           setState(() {
             if (index + 1 < a.length) {
               index++;
+              if (index == 2) {
+                texta = "آسماء الحيوانات الاليفه والطيور التي تحيط بالتلميذ";
+              } else if (index == 4) {
+                texta = "آسماء وسائل النقل الحديثه والقديمه التي تحيط بالتلميذ";
+              } else if (index == 7) {
+                texta = "آسماء بعض ادوات المنزل";
+              } else if (index == 9) {
+                texta = "آسماء وسائل الاتصال المحيطه بالتلميذ";
+              } else if (index == 10) {
+                texta = "اسماء الاشياء في بيئة المدرسة";
+              } else if (index == 11) {
+                texta = "اسماء الفواكه";
+              }
               setState(() {
                 a1 = false;
                 a4 = false;
@@ -462,7 +559,7 @@ class _Lison extends State<LisonOne> {
                 a2 = false;
               });
             } else {
-              print("Done");
+              Navigator.pop(context);
             }
           });
         },
